@@ -3,14 +3,14 @@
 class Caneta {
 
     //atributos em php
-    var $modelo;
-    var $cor;
-    var $ponta;
-    var $carga;
-    var $tampada;
+    public $modelo;
+    public $cor;
+    private $ponta;
+    protected $carga;
+    protected $tampada;
 
     //métodos em php
-    function rabiscar() {
+    public function rabiscar() {
         if ($this->tampada == true) {
             echo "<p>Erro não posso rabiscar";
         } else {
@@ -18,12 +18,12 @@ class Caneta {
         }
     }
 
-    function tampar() {
+    public function tampar() {
         $this->tampada = true;
         
     }
 
-    function destampar() {
+    public function destampar() {
         $this->tampada = false;
     }
 
