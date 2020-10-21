@@ -8,16 +8,16 @@ class Caneta {
     private $ponta;
     protected $carga;
     protected $tampada;
-    
+
     //método construtor - exe:01
-    //public function __construct() {
-    //    $this->modelo = "BIC";
-    //    $this->cor = "Verde";
-    //    $this->ponta = 0.8;
-    //    $this->carga = 50;
-    //    $this->tampada = false;
-    //}
-    
+    public function __construct() {
+        $this->modelo = "Diego";
+        $this->cor = "Vermelho";
+        $this->ponta = 0.8;
+        $this->carga = 50;
+        $this->tampada = true;
+    }
+
     //metodo construtor - exe:02
     //public function Caneta() {
     //    $this->modelo = "BIC";
@@ -26,29 +26,29 @@ class Caneta {
     //    $this->carga = 50;
     //    $this->tampada = false;
     //}
-    
+
     //metodo construtor - exe:03
-    public function Caneta($m, $c, $p, $ca, $t) {
-        $this->modelo = $m;
-        $this->cor = $c;
-        $this->ponta = $p;
-        $this->carga = $ca;
-        $this->tampada = $t;
-    }
+    //public function Caneta($m, $c, $p, $ca, $t) {
+    //    $this->modelo = $m;
+    //    $this->cor = $c;
+    //    $this->ponta = $p;
+    //    $this->carga = $ca;
+    //    $this->tampada = $t;
+    //}
 
     //métodos acessores em php
     public function getModelo(){
         return $this->modelo;
     }
-    
+
     public function setModelo($m) {
         $this->modelo = $m;        
     }
-    
+
     public function getPonta(){
         return $this->ponta;
     }
-    
+
     public function setPonta($p){
         $this->ponta = $p;
     }

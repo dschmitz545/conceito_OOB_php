@@ -11,11 +11,19 @@
             require 'Caneta.php';
 
             // Criando um novo objeto c1 do tipo Caneta, atravez da classe Caneta
-            $c1 = new Caneta("Bic Cristal", "Amarelo", 0.7, 100, true);
+            // Construtor ex:01
+            $c1 = new Caneta();
+            
+            // Construtor ex:02
+            $c1 = new Caneta();
 
             //definindo valor dos atributos
             //$c1->setModelo("Compactor");
             //$c1->setPonta(1.2);
+
+            // Construtor ex: 03
+            $c1 = new Caneta("Bic Cristal", "Amarelo", 0.7, 100, true);
+
             echo "</br>";
             print "Eu tenho uma caneta {$c1->getModelo()} de cor {$c1->getCor()} de ponta {$c1->getPonta()} com carga de {$c1->getCarga()}% e tampada {$c1->getTampada()}";
             
